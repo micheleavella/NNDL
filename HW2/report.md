@@ -97,7 +97,7 @@ To visualize the latent space we have to reduce its dimension to $2$. To do so w
 
 **PCA**: principal component analysis is a linear transformation that projects the original variables into new variables ranked by the variance. In this way we can use the first two new variables to represent our data.
 
-**TSNE**: T-Distributed stochastic Neighbor Embedding is a non-linear transformation that reduces the data dimensionality by keeping close points in the original space close in the reduced space.
+**TSNE**: T-Distributed stochastic Neighbor Embedding is a non-linear transformation that reduces the data dimensionality by keeping points close in the original space, close in the reduced space.
 
 ___
 
