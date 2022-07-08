@@ -170,7 +170,7 @@ In this case the the number of steps needed to reach the best model decreases wi
 
 ___
 
-For the hyperparameter tuning: $score$ is the score at the end of the training and $steps$ is the number of epochs of the training. The results (target_up is $\tau$):
+For the hyperparameter tuning: *score* is the score at the end of the training and *steps* is the number of epochs of the training. The results (target_up is $\tau$):
 
 ![](img/hyp_tun_cart.png)
 
@@ -180,7 +180,7 @@ We can see that:
 
 - $lr = 10^{-4}$ the agent hardly never the maximum score.
 
-- Small $lr$ and $\tau$ increase the speed of convergence.
+- Small $lr \;\text{and}\; \tau$ increase the speed of convergence.
 
 ___
 
