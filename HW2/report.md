@@ -30,7 +30,13 @@ $$
 
 where $N$ is the dimension of the original space.
 
-The aim of the autoencoder is to reduce the input vector $\vec V$ to $\vec v$ and then reconstruct the latent vector $\vec V '$ as similar as possible to $\vec V$ . This is a unsupervised problem since we do not use labels but we compare the output $\vec V '$ with the input $\vec V$ trying to minimize their difference. 
+The aim of the autoencoder is to reduce the input vector $\vec V$ to 
+$\vec v$ and then reconstruct the latent 
+vector $\vec V '$ as similar as possible to 
+$\vec V$ . This is a unsupervised problem since we do not use labels but we compare the output 
+$\vec V '$ with the 
+input 
+$\vec V$ trying to minimize their difference. 
 
 ___
 
@@ -122,7 +128,9 @@ ___
 
 **4) Variational autoencoder**
 
-In our case we use a normal distribution to sample reduced vectors $\vec v$. In the encoding part instead of having a linear layer connected to the latent space we have to parallel linear layers, one for the mean $\mu$ and one for the standard deviation $\sigma$. 
+In our case we use a normal distribution to sample reduced vectors $\vec v$. In the encoding part instead of having a linear layer connected to the latent space we have to parallel linear layers, 
+one for the mean $\mu$ and 
+one for the standard deviation $\sigma$. 
 
 <center>
 
@@ -135,7 +143,10 @@ From this two layers we can then sample the latent vector in the following way:
 $$\vec v = \{v_1, v_2, ... v_L\} \; : \; v_i = \mu_i + \sigma_i \epsilon_i \quad \text{with} \quad \epsilon_i \sim N(0,1)$$
 
 
-Regarding the loss, we have to add another regularization term that is the KL divergence between $N(\mu,\sigma)$ and $N(0,1)$ to avoid $\mu$ and $\sigma$ to explode and overfit the training set.
+Regarding the loss, we have to add another regularization term that is the KL divergence between $N(\mu,\sigma)$ and 
+$N(0,1)$ to 
+avoid $\mu$ 
+and $\sigma$ to explode and overfit the training set.
 The final loss will be:
 
 $$
@@ -169,7 +180,9 @@ After the $10$ trials the best autoencoder model is :
 The test loss is:
 $$test loss \simeq 0.02$$
 
-In the next figure three images $\vec V$ (top) and the reconstruction $\vec V'$ (bottom). As we can see the autoencoder is able to shrink the images down to $4$ dimension and then reconstruct the images keeping the relevant informations like the shape but ignoring details like the write on the first shirt.
+In the next figure three images $\vec V$ (top) and 
+the reconstruction $\vec V'$ (bottom). 
+As we can see the autoencoder is able to shrink the images down to $4$ dimension and then reconstruct the images keeping the relevant informations like the shape but ignoring details like the write on the first shirt.
 ![](img/original_reconstr.png)
 
 
