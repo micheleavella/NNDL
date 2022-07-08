@@ -199,7 +199,7 @@ Below the convergence profile. We can see that there is a bit of overfitting. We
 
 ![](img/fine_tuning_conv.png)
 
-Accuracy: $$\frac{\# \text{right pred} }{\# \text{test set}} = 75 \%$$
+Accuracy: $$\frac{ \text{right pred} }{ \text{test set}} = 75 \%$$
 
 The accuracy is smaller than what obtained with the CNN but if we consider that the latent space is $4$ the result is impressive. If we look at the confusion matrix we can see that the main problem is the $shirt$ class. This was predictable already from the visualization part because the $shirt$ cluster overlaps with other clusters. To improve the performances, we should improve the autoencoder and/or the dimension of the latent space.
 
