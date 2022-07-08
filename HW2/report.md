@@ -27,6 +27,7 @@ The autoencoder can be summarized in the following way:
 $$
 \vec{V} \in \mathbb R ^N\rightarrow \text{encoder} \rightarrow \vec v \in \mathbb R ^L\rightarrow \text{decoder}\rightarrow \vec V '\in \mathbb R ^N
 $$
+
 where $N$ is the dimension of the original space.
 
 The aim of the autoencoder is to reduce the input vector $\vec V$ to $\vec v$ and then reconstruct the latent vector $\vec V '$ as similar as possible to $\vec V$ . This is a unsupervised problem since we do not use labels but we compare the output $\vec V '$ with the input $\vec V$ trying to minimize their difference. 
