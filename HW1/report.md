@@ -127,7 +127,7 @@ After the $10$ trials the best DNN model is :
 
 The test loss is:
 $$test loss \simeq 0.35$$
-Accuracy: $$\frac{\# \text{right pred} }{\# \text{test set}} = 87 \%$$
+Accuracy: $$\frac{ \text{right pred} }{ \text{test set}} = 87 \%$$
 
 ___
 
@@ -150,7 +150,7 @@ After the $10$ trials the best CNN model is :
 The test loss is:
 $$test loss \simeq 0.30$$
 
-Accuracy: $$\frac{\# \text{right pred} }{\# \text{test set}} = 89 \%$$
+Accuracy: $$\frac{ \text{right pred} }{ \text{test set}} = 89 \%$$
 
 Confusion matrix:
 
